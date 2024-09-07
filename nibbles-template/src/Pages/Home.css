@@ -1,0 +1,31 @@
+.content-container {
+    width: calc(100% -270px); /* Ensure it takes full available space */
+    margin-left: 290px;
+    margin-top: 30px;
+
+  }
+  
+  .Title h1 {
+    color: blue;
+  }
+  
+  .Title h3 {
+    padding-block: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    padding-inline-end: 50px;
+  }
+  
+
+  .main-content img {
+    flex: 1;
+    height: 450px;
+  }
+  .main-content p {
+    flex: 2;
+    padding: 20px;
+    line-height: 2;
+  }
+  
