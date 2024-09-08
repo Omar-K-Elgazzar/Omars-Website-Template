@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Fix for content hidden behind the navbar */
+body {
+  margin: 0;
+  padding-top: 200px; /* Adjust this value based on the height of your navbar */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+

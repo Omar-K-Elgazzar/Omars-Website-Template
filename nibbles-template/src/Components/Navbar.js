@@ -1,9 +1,12 @@
-import {Link} from 'react-router-dom';
-import './Navbar.css'
+import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-    return (  
-        <nav className="navbar">
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
+    return (
+        <nav className={`navbar ${isHomePage ? 'navbar-home' : 'navbar-regular'}`}>
             <h1>Title</h1>
             <div className="links">
                 <Link to="/">Home</Link>
@@ -11,10 +14,9 @@ const Navbar = () => {
                 <Link to="/Page2">Page 2</Link>
                 <Link to="/AboutUs">About Us</Link>
                 <Link to="/Contact">Contact</Link>
-
             </div>
         </nav>
     );
 }
- 
+
 export default Navbar;
